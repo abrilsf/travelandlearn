@@ -1,0 +1,180 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap');
+
+/*Variables*/
+:root {
+    --principal : #1e000e;
+    --secondary : #c9c5ba;
+    --terciary : #0e273c;
+    --gradient-bg: linear-gradient(to bottom, blue, pink);
+    --font-primary: 'Shippori Antique B1', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+
+}
+/*Normalize*/
+*,
+* ::after,
+* ::before{
+    Margin: 0;
+    Padding:0;
+    box-sizing: border-box;
+}
+
+/*Globals*/
+html{
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    color: var(--principal);
+}
+body {
+   /* display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh; */
+    background-color: var(--gradient-bg);
+    }
+.inicio{
+    background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg) ;
+    background-position: right top;
+}
+
+ul {
+    list-style-type: none;
+}
+a{
+    color: var(--principal);
+    text-decoration: none;
+    display: inline-block;
+    align-items:center;
+    font-size: 15px;
+}
+header a{
+    margin-top: 1em;
+}
+   
+/*Helpers*/
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1080 px;
+    margin: 0 auto;
+}
+/*Header y barra de navegación*/
+header {
+    background-color: var(--secondary);
+    align-items: center;
+   }
+header .barra {
+    justify-content: space-between;
+    min-height: 10vh;
+    padding: 0 2rem;
+}
+
+header .logo {
+    flex-basis: 50%;
+    float: left;
+}
+
+header .menu {
+    flex-basis: 30%;
+    justify-content:space-around;
+}
+.menu .menu__item{
+    border: 2px solid var(--secondary);
+
+}
+
+
+.nosotros {
+    display: block;
+    margin: 0px auto;
+    size: 500px;
+}
+h2 {
+ text-align: center;
+ font-size: 60px;
+margin-top: 2em;
+transform: translate(15px, -15px);
+}
+
+.textorelativo {
+font-size: 24px;
+text-align: center;
+}
+
+h3{
+    font-size: 16px;
+}
+
+
+/*página de Contacto */
+
+.bcontact{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 10vh 0.2fr 2fr 10vh;
+    grid-template-areas: 
+    "header"
+    "section"
+    "div "
+    "footer";
+    background: var(--gradient-bg);
+}
+
+header .hcontact{
+    grid-area: "header";
+}
+
+section .scontact{
+    grid-area: "section";
+    justify-self: center ;
+    align-self: center;
+}
+
+div.subgrid{
+    display:grid;
+    grid-template-areas: "form picture";
+    grid-template-columns: 2fr 1fr;
+    margin-left: 10em;
+    margin-right:5em;
+}
+.cflex{
+    justify-content: space-around;
+}
+form {
+    grid-area: "form";
+    font-size: 2.2em;
+    justify-self: center;
+}
+
+picture .contact0{
+    grid-area: "picture";
+    max-width: 100px;
+    min-width: 100px;
+}
+ .fcontact {
+    grid-area: "footer";
+    background-color: var(--terciary);
+ }
+ 
+/*fin página de contacto */
+
+/*página sobre nosotros */
+.nosBody{
+    background: var(--gradient-bg);
+} 
+#Travelandlearn {
+    background-color: var(--terciary);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+footer ul{
+    text-decoration: none;
+    
+}    
