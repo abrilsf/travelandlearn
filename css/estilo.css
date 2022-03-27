@@ -105,7 +105,7 @@ header .menu {
 .nosotros {
     display: block;
     margin: 0px auto;
-    size: 500px;
+    max-height: 100vh;
     justify-items: center;
 }
 
@@ -206,9 +206,21 @@ table{
     margin: 3em;
     font-size: 2em;
 }
+
+
+/*página academias */
+.bacademias{
+background-color: var(--secondary);
+}
 footer{
     grid-area: "footer2";
 }
+
+section .tamaño{
+    max-height: fit-content;
+    min-height: fit-content;
+}
+
 #Travelandlearn {
     background-color: var(--terciary);
     bottom: 0;
