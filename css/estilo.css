@@ -106,15 +106,13 @@ header .menu {
     display: block;
     margin: 0px auto;
     size: 500px;
+    justify-items: center;
 }
 
-h2 {
- text-align: center;
+
+p {
  font-size: 60px;
- margin-top: 2.5em;
- /*animation-duration: 2s;
- animation-name: aprender;
- animation-iteration-count: infinite; */
+ margin-top: 200px;
 }
 
 .textorelativo {
@@ -183,6 +181,34 @@ picture .contact0{
 .nosBody{
     background: var(--gradient-bg);
 } 
+
+
+
+
+
+/*página nuestros programas */
+.bprogramas{
+    display: grid;
+    grid-template-areas: 
+    "header2"
+    "table"
+    "footer2";
+    grid-template-rows: 5vh 5fr 5vh;
+    background-color: var(--secondary);
+}
+
+header .hprogramas{
+    grid-area: "header2";
+}
+table{
+    grid-area: "table" ;
+    justify-self: center ;
+    margin: 3em;
+    font-size: 2em;
+}
+footer{
+    grid-area: "footer2";
+}
 #Travelandlearn {
     background-color: var(--terciary);
     bottom: 0;
