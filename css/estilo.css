@@ -6,7 +6,6 @@
     --principal : #1e000e;
     --secondary : #c9c5ba;
     --terciary : #0e273c;
-    --gradient-bg: linear-gradient(to bottom, blue, pink);
     --font-primary: 'Shippori Antique B1', sans-serif;
     --font-secondary: 'Poppins', sans-serif;
 
@@ -23,15 +22,15 @@
 /*Globals*/
 html{
     font-size: 62.5%;
-    font-family: var(--font-primary);
-    /*font-weight: ; */
-    color: var(--principal);
 }
+
 body {
-   /* display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh; */
-    background-color: var(--gradient-bg);
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    background-color: var(--secondary);
+    color: var(--principal);
+    font-family: var(--font-primary);
     }
 .inicio{
     background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg) ;
@@ -49,7 +48,7 @@ a{
     font-size: 15px;
 }
 header a{
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
    
 /*Helpers*/
@@ -77,12 +76,16 @@ header .barra {
 
 header .logo {
     flex-basis: 30%;
-    float: left;
+    float: left; 
 }
 
 header .menu {
     flex-basis: 40%;
     justify-content:space-between;
+    align-items: center;
+}
+a:hover{
+    color: var(--terciary)
 }
 
 
@@ -93,26 +96,12 @@ header .menu {
 .menu .menu__item:hover {
     border-color: var(--principal);
     
+    
 }
 .menu .menu__item .menu__link {
     font-size: 1.5em;
     padding: 0.5rem;
 
-}
-
-
-
-.nosotros {
-    display: block;
-    margin: 0px auto;
-    max-height: 100vh;
-    justify-items: center;
-}
-
-
-p {
- font-size: 60px;
- margin-top: 200px;
 }
 
 .textorelativo {
@@ -123,46 +112,51 @@ text-align: center;
 h3{
     font-size: 16px;
 }
-
+/*index */
+.iarticle{
+font-size: 7em ;
+text-align: center;
+margin-top: 1.5em;
+font-family: var(--font-primary);
+color: var(--principal);
+}
 
 /*página de Contacto */
 
 .bcontact{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: 10vh 0.2fr 2fr 10vh;
-    grid-template-areas: 
-    "header"
-    "section"
-    "div "
-    "footer";
-    background: var(--gradient-bg);
-}
-
-header .hcontact{
-    grid-area: "header";
-}
-
-section .scontact{
-    grid-area: "section";
-    justify-self: center ;
-    align-self: center;
+    background: var(--secondary);
 }
 
 div.subgrid{
     display:grid;
-    grid-template-areas: "form picture";
-    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "subgrid-1 subgrid-1"
+    "subgrid-2 subgrid-2"
+    "form picture";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 10vh 20vh;
     margin-left: 10em;
     margin-right:5em;
 }
-.cflex{
-    justify-content: space-around;
+
+
+.subgrid-1{
+    grid-area: "subgrid-1";
+    font-size: 3em;
 }
+.subgrid-2{
+    grid-area: "subgrid-2";
+    font-size: 2em;
+}
+
 form {
     grid-area: "form";
-    font-size: 2.2em;
-    justify-self: center;
+    font-size: 1.3em;
+    
+}
+button{
+    padding:0.5em;
+    margin:0.5em;
 }
 
 picture .contact0{
@@ -179,15 +173,19 @@ picture .contact0{
 
 /*página sobre nosotros */
 .nosBody{
-    background: var(--gradient-bg);
+    background: var(--secondary);
 } 
-
-
-
+.nosTitle{
+    font-size:5em;
+    
+}
+.nosInfo{
+    font-size: 2em;
+}
 
 
 /*página nuestros programas */
-.bprogramas{
+body .bprogramas{
     display: grid;
     grid-template-areas: 
     "header2"
@@ -212,22 +210,23 @@ table{
 .bacademias{
 background-color: var(--secondary);
 }
-footer{
-    grid-area: "footer2";
+.acaSection{
+position:relative;
+margin-top: 2em;
 }
 
-section .tamaño{
-    max-height: fit-content;
-    min-height: fit-content;
-}
 
+/*FOOTER */
 #Travelandlearn {
     background-color: var(--terciary);
     bottom: 0;
     position: fixed;
     width: 100%;
+    color: var(--principal);
+    margin-right: 2rem;
 }
 footer ul{
     text-decoration: none;
+    color:var(--principal);
     
 }    
