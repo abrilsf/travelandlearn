@@ -1,0 +1,41 @@
+/*RESET*/
+
+*,
+* ::after,
+* ::before{
+    Margin: 0;
+    Padding:0;
+    box-sizing: border-box;
+}
+
+/*GLOBALS*/
+html{
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    background-color: var(--secondary);
+    color: var(--principal);
+    font-family: var(--font-primary);
+    }
+.inicio{
+    background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg) ;
+    background-position: right top;
+}
+
+ul {
+    list-style-type: none;
+}
+a{
+    color: var(--principal);
+    text-decoration: none;
+    display: inline-block;
+    align-items:center;
+    font-size: 15px;
+}
+header a{
+    margin-top: 0.5em;
+}

@@ -1,0 +1,11 @@
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1080 px;
+    margin: 0 auto;
+}

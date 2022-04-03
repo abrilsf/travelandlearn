@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*IMPORTS*/
+/*MISCELANEOUS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap");
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  max-width: 1080 px;
+  margin: 0 auto; }
+
+/*RESET*/
+*,
+* ::after,
+* ::before {
+  Margin: 0;
+  Padding: 0;
+  box-sizing: border-box; }
+
+/*GLOBALS*/
+html {
+  font-size: 62.5%; }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: var(--secondary);
+  color: var(--principal);
+  font-family: var(--font-primary); }
+
+.inicio {
+  background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg);
+  background-position: right top; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: var(--principal);
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  font-size: 15px; }
+
+header a {
+  margin-top: 0.5em; }
+
+/*PARTIALS*/
+#Travelandlearn {
+  background-color: var(--terciary);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: var(--principal);
+  margin-right: 2rem; }
+
+footer ul {
+  text-decoration: none;
+  color: var(--principal); }
+
+/*Header y barra de navegación*/
+header {
+  background-color: var(--secondary); }
+
+.barra {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  padding: 0 2rem; }
+
+.logo {
+  flex-basis: 30%;
+  float: left; }
+
+.menu {
+  flex-basis: 40%;
+  justify-content: space-between;
+  align-items: center; }
+  .menu__item {
+    border: 1px solid var(--secondary);
+    transition: all .3s ease-in-out; }
+    .menu__item:hover {
+      border-color: var(--principal); }
+  .menu__link {
+    font-size: 1.5em;
+    padding: 0.5rem; }
+
+a:hover {
+  color: var(--terciary); }
+
+/*VIEWS*/
+.bcontact {
+  background: var(--secondary); }
+
+div.subgrid {
+  display: grid;
+  grid-template-areas: "subgrid-1 subgrid-1" "subgrid-2 subgrid-2" "form picture";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 10vh 20vh;
+  margin-left: 10em;
+  margin-right: 5em; }
+
+.subgrid-1 {
+  grid-area: "subgrid-1";
+  font-size: 3em; }
+
+.subgrid-2 {
+  grid-area: "subgrid-2";
+  font-size: 2em; }
+
+form {
+  grid-area: "form";
+  font-size: 1.3em; }
+
+button {
+  padding: 0.5em;
+  margin: 0.5em; }
+
+picture .contact0 {
+  grid-area: "picture";
+  max-width: 100px;
+  min-width: 100px; }
+
+.fcontact {
+  grid-area: "footer";
+  background-color: var(--terciary); }
