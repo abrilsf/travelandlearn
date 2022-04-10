@@ -2,16 +2,41 @@
 /*IMPORTS*/
 /*MISCELANEOUS*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap");
-.flex-row {
-  display: flex; }
+.img-uni1 {
+  width: 100%;
+  height: 200 px;
+  background-position: cover;
+  background-image: url(../multimedia/images); }
 
-.flex-column {
-  display: flex;
-  flex-direction: column; }
+.img-uni2 {
+  width: 100%;
+  height: 200 px;
+  background-position: cover;
+  background-image: url(../multimedia/images); }
 
-.container {
-  max-width: 1080 px;
-  margin: 0 auto; }
+.img-uni3 {
+  width: 100%;
+  height: 200 px;
+  background-position: cover;
+  background-image: url(../multimedia/images); }
+
+.img-uni4 {
+  width: 100%;
+  height: 200 px;
+  background-position: cover;
+  background-image: url(../multimedia/images); }
+
+.img-uni5 {
+  width: 100%;
+  height: 200 px;
+  background-position: cover;
+  background-image: url(../multimedia/images); }
+
+.img-uni6 {
+  width: 100%;
+  height: 200 px;
+  background-position: cover;
+  background-image: url(../multimedia/images); }
 
 /*RESET*/
 *,
@@ -29,9 +54,9 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background-color: var(--secondary);
-  color: var(--principal);
-  font-family: var(--font-primary); }
+  background-color: #c9c5ba;
+  color: #1e000e;
+  font-family: var("Shippori Antique B1", sans-serif); }
 
 .inicio {
   background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg);
@@ -41,7 +66,7 @@ ul {
   list-style-type: none; }
 
 a {
-  color: var(--principal);
+  color: #1e000e;
   text-decoration: none;
   display: inline-block;
   align-items: center;
@@ -50,52 +75,28 @@ a {
 header a {
   margin-top: 0.5em; }
 
-/*PARTIALS*/
-#Travelandlearn {
-  background-color: var(--terciary);
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  color: var(--principal);
-  margin-right: 2rem; }
+.flex-row {
+  display: flex; }
 
-footer ul {
-  text-decoration: none;
-  color: var(--principal); }
+.flex-column {
+  display: flex;
+  flex-direction: column; }
 
-/*Header y barra de navegación*/
-header {
-  background-color: var(--secondary); }
-
-.barra {
-  justify-content: space-between;
-  align-items: center;
-  min-height: 10vh;
-  padding: 0 2rem; }
-
-.logo {
-  flex-basis: 30%;
-  float: left; }
-
-.menu {
-  flex-basis: 40%;
-  justify-content: space-between;
-  align-items: center; }
-  .menu__item {
-    border: 1px solid var(--secondary);
-    transition: all .3s ease-in-out; }
-    .menu__item:hover {
-      border-color: var(--principal); }
-  .menu__link {
-    font-size: 1.5em;
-    padding: 0.5rem; }
-
-a:hover {
-  color: var(--terciary); }
+.container {
+  max-width: 1080 px;
+  margin: 0 auto; }
 
 /*VIEWS*/
+/*index */
+.iarticle {
+  font-size: 7em;
+  text-align: center;
+  margin-top: 1.5em;
+  font-family: var("Shippori Antique B1", sans-serif);
+  color: #1e000e; }
+
 .bcontact {
-  background: var(--secondary); }
+  background: #c9c5ba; }
 
 div.subgrid {
   display: grid;
@@ -128,4 +129,73 @@ picture .contact0 {
 
 .fcontact {
   grid-area: "footer";
-  background-color: var(--terciary); }
+  background-color: #0e273c; }
+
+/*página sobre nosotros */
+.nosBody {
+  background: #c9c5ba; }
+
+.nosTitle {
+  font-size: 5em; }
+
+.nosInfo {
+  font-size: 2em; }
+
+/*página nuestros programas */
+body .bprogramas {
+  display: grid;
+  grid-template-areas: "header2" "table" "footer2";
+  grid-template-rows: 5vh 5fr 5vh;
+  background-color: #c9c5ba; }
+
+header .hprogramas {
+  grid-area: "header2"; }
+
+table {
+  grid-area: "table";
+  justify-self: center;
+  margin: 3em;
+  font-size: 2em; }
+
+/*PARTIALS*/
+/*Header y barra de navegación*/
+header {
+  background-color: #c9c5ba; }
+
+.barra {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  padding: 0 2rem; }
+
+.logo {
+  flex-basis: 30%;
+  float: left; }
+
+.menu {
+  flex-basis: 40%;
+  justify-content: space-between;
+  align-items: center; }
+  .menu__item {
+    border: 1px solid #c9c5ba;
+    transition: all .3s ease-in-out; }
+    .menu__item:hover {
+      border-color: #1e000e; }
+  .menu__link {
+    font-size: 1.5em;
+    padding: 0.5rem; }
+
+a:hover {
+  color: #0e273c; }
+
+#Travelandlearn {
+  background-color: #0e273c;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: #1e000e;
+  margin-right: 2rem; }
+
+footer ul {
+  text-decoration: none;
+  color: #1e000e; }

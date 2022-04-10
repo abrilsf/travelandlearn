@@ -1,14 +1,14 @@
 
 #Travelandlearn {
-    background-color: var(--terciary);
+    background-color: $terciary;
     bottom: 0;
     position: fixed;
     width: 100%;
-    color: var(--principal);
+    color: $principal;
     margin-right: 2rem;
 }
 footer ul{
     text-decoration: none;
-    color:var(--principal);
+    color:$principal;
     
 }    

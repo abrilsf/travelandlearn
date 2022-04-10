@@ -1,5 +1,5 @@
-/*Imports*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap');
+/*Imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap'); */
 
 /*Variables*/
 /*:root {
@@ -113,14 +113,14 @@ text-align: center;
 h3{
     font-size: 16px;
 }
-/*index */
+/*index 
 .iarticle{
 font-size: 7em ;
 text-align: center;
 margin-top: 1.5em;
 font-family: var(--font-primary);
 color: var(--principal);
-}
+} */
 
 /*página de Contacto
 
@@ -172,7 +172,7 @@ picture .contact0{
  
 fin página de contacto */
 
-/*página sobre nosotros */
+/*página sobre nosotros
 .nosBody{
     background: var(--secondary);
 } 
@@ -182,10 +182,10 @@ fin página de contacto */
 }
 .nosInfo{
     font-size: 2em;
-}
+} */
 
 
-/*página nuestros programas */
+/*página nuestros programas 
 body .bprogramas{
     display: grid;
     grid-template-areas: 
@@ -204,17 +204,17 @@ table{
     justify-self: center ;
     margin: 3em;
     font-size: 2em;
-}
+} */
 
 
-/*página academias */
+/*página academias 
 .bacademias{
 background-color: var(--secondary);
 }
 .acaSection{
 position:relative;
 margin-top: 2em;
-}
+} */
 
 
 /*FOOTER

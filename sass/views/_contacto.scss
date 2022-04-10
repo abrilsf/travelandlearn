@@ -1,5 +1,5 @@
 .bcontact{
-    background: var(--secondary);
+    background: $secondary;
 }
 
 div.subgrid{
@@ -41,5 +41,5 @@ picture .contact0{
 }
  .fcontact {
     grid-area: "footer";
-    background-color: var(--terciary);
+    background-color: $terciary;
  }

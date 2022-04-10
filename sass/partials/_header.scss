@@ -1,6 +1,6 @@
 /*Header y barra de navegación*/
 header {
-    background-color: var(--secondary);
+    background-color: $secondary;
    }
  .barra {
     justify-content: space-between;
@@ -21,11 +21,11 @@ header {
     align-items: center;
 
     &__item{
-        border: 1px solid var(--secondary); 
+        border: 1px solid $secondary; 
         transition: all .3s ease-in-out;
 
         &:hover {
-        border-color: var(--principal);
+        border-color: $principal;
         }
     
     }
@@ -36,7 +36,7 @@ header {
     }
 }
 a:hover{
-    color: var(--terciary)
+    color: $terciary
 }
 
 

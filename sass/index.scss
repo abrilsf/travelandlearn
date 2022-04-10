@@ -1,14 +1,17 @@
 /*IMPORTS*/
 /*MISCELANEOUS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap');
-@import './misc/mixins';
-@import './misc/normalize';
 @import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
 
-/*PARTIALS*/
-@import './partials/footer';
-@import './partials/header';
 /*VIEWS*/
 @import './views/home';
 @import './views/contacto';
 @import './views/nosotros';
+@import './views/academias';
+@import './views/programas';
+
+/*PARTIALS*/
+@import './partials/header';
+@import './partials/footer';

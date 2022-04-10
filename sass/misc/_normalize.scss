@@ -17,9 +17,9 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto; 
     min-height: 100vh; 
-    background-color: var(--secondary);
-    color: var(--principal);
-    font-family: var(--font-primary);
+    background-color: $secondary;
+    color: $principal;
+    font-family: var($font-primary);
     }
 .inicio{
     background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg) ;
@@ -30,7 +30,7 @@ ul {
     list-style-type: none;
 }
 a{
-    color: var(--principal);
+    color: $principal;
     text-decoration: none;
     display: inline-block;
     align-items:center;
@@ -39,3 +39,4 @@ a{
 header a{
     margin-top: 0.5em;
 }
+
