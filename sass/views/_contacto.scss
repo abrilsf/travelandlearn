@@ -2,44 +2,16 @@
     background: $secondary;
 }
 
-div.subgrid{
-    display:grid;
-    grid-template-areas: 
-    "subgrid-1 subgrid-1"
-    "subgrid-2 subgrid-2"
-    "form picture";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 10vh 20vh;
-    margin-left: 10em;
-    margin-right:5em;
-}
-
-
-.subgrid-1{
-    grid-area: "subgrid-1";
-    font-size: 3em;
-}
-.subgrid-2{
-    grid-area: "subgrid-2";
-    font-size: 2em;
-}
 
 form {
-    grid-area: "form";
-    font-size: 1.3em;
+   font-size: 1.3em;
     
 }
 button{
     padding:0.5em;
     margin:0.5em;
 }
+.contacto__titulo{
+font-size: 4em;
 
-picture .contact0{
-    grid-area: "picture";
-    max-width: 100px;
-    min-width: 100px;
-}
- .fcontact {
-    grid-area: "footer";
-    background-color: $terciary;
- }
+} 

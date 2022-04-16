@@ -1,9 +1,19 @@
 /*index */
-.iarticle{
-    font-size: 7em ;
-    text-align: center;
-    margin-top: 1.5em;
-    font-family: var($font-primary);
-    color: $principal;
-    }
+
+.index{
+    background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg) ;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__article{
+        font-size: 7em ;
+        text-align: center;
+        margin-top: 1.5em;
+        font-family: var($font-primary);
+        color: $principal;
+        }
+
+
+}
 
