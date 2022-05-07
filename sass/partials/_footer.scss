@@ -1,14 +1,17 @@
 
-#Travelandlearn {
-    background-color: $terciary;
+footer{
     bottom: 0;
-    position: fixed;
-    width: 100%; 
-    color: $principal;
-   
+    background-color: $terciary;
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-family: $secondary;
+    font-size: 1.5em;
 }
+    
 footer ul{
     text-decoration: none;
-    color:$principal;
+    color:white;
+
     
 }    

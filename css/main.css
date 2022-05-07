@@ -1,43 +1,7 @@
 @charset "UTF-8";
 /*IMPORTS*/
 /*MISCELANEOUS*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap");
-.img-uni1 {
-  width: 100%;
-  height: 200 px;
-  background-position: cover;
-  background-image: url(../multimedia/images); }
-
-.img-uni2 {
-  width: 100%;
-  height: 200 px;
-  background-position: cover;
-  background-image: url(../multimedia/images); }
-
-.img-uni3 {
-  width: 100%;
-  height: 200 px;
-  background-position: cover;
-  background-image: url(../multimedia/images); }
-
-.img-uni4 {
-  width: 100%;
-  height: 200 px;
-  background-position: cover;
-  background-image: url(../multimedia/images); }
-
-.img-uni5 {
-  width: 100%;
-  height: 200 px;
-  background-position: cover;
-  background-image: url(../multimedia/images); }
-
-.img-uni6 {
-  width: 100%;
-  height: 200 px;
-  background-position: cover;
-  background-image: url(../multimedia/images); }
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Ubuntu:wght@300&display=swap");
 /*RESET*/
 *,
 * ::after,
@@ -51,13 +15,13 @@ html {
   font-size: 62.5%; }
 
 body {
-  /*display: grid;
-    grid-template-areas: "";
-    grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
   background-color: #c9c5ba;
   color: #1e000e;
-  font-family: var("Shippori Antique B1", sans-serif); }
+  font-family: "Open Sans", sans-serif; }
+
+.position {
+  min-height: calc(100vh - 10vh - 100px); }
 
 ul {
   list-style-type: none; }
@@ -72,6 +36,11 @@ a {
 header a {
   margin-top: 0.5em; }
 
+.pagesTitle {
+  font-size: 4em;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif; }
+
 .flex-row {
   display: flex; }
 
@@ -82,19 +51,24 @@ header a {
 /*VIEWS*/
 /*index */
 .index {
-  background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg);
+  background-image: url(https://wallpaperaccess.com/full/3589351.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  min-width: 100%; }
   .index__article {
     font-size: 7em;
     text-align: center;
     margin-top: 1.5em;
-    font-family: var("Shippori Antique B1", sans-serif);
-    color: #1e000e; }
+    margin-right: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-style: bold;
+    color: white; }
 
-.bcontact {
-  background: #c9c5ba; }
+.subarticle {
+  font-size: 2em;
+  color: white;
+  font-family: "Ubuntu", sans-serif; }
 
 form {
   font-size: 1.3em; }
@@ -103,79 +77,87 @@ button {
   padding: 0.5em;
   margin: 0.5em; }
 
-.contacto__titulo {
+.contact_text {
+  font-size: 2em; }
+
+.contacto__title {
   font-size: 4em; }
 
-/*página sobre nosotros */
-.nosBody {
-  background: #c9c5ba; }
+.contactpicture {
+  margin: auto; }
 
-.nosTitle {
-  font-size: 5em; }
+/*página sobre nosotros */
+.nos {
+  background: #c9c5ba;
+  min-height: calc(100vh - 10vh - 100px); }
+  .nos__title {
+    font-size: 5em; }
 
 .nosInfo {
   font-size: 2em; }
 
-.sedes_tamaño {
-  font-size: 4em; }
+.acadiv {
+  min-height: 100vh; }
+
+.academy {
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif; }
 
 /*página nuestros programas */
-body .bprogramas {
-  display: grid;
-  grid-template-areas: "header2" "table" "footer2";
-  grid-template-rows: 5vh 5fr 5vh;
-  background-color: #c9c5ba; }
-
-header .hprogramas {
-  grid-area: "header2"; }
-
-table {
-  grid-area: "table";
-  justify-self: center;
-  margin: 3em;
+.program__box {
+  background-color: beige;
+  border: radius 9%;
   font-size: 2em; }
 
-.programas_section {
-  font-size: 4em; }
+.nptext {
+  font-style: bold; }
 
 /*PARTIALS*/
 /*Header y barra de navegación*/
 header {
-  background-color: #c9c5ba;
-  display: block; }
+  display: sticky;
+  color: #c9c5ba; }
 
 .barra {
   display: flex;
-  justify-content: space-between;
-  min-height: 10vh;
-  padding: 0 2rem; }
+  justify-content: space-evenly;
+  justify-items: center;
+  min-height: 80px;
+  padding: 0 2rem;
+  color: white;
+  position: sticky; }
 
 .logo {
   flex-basis: 30%; }
 
 .menu {
   display: flex;
-  flex-basis: 40%;
-  justify-content: right; }
+  flex-basis: 40%; }
   .menu__item {
-    border: 1px solid #c9c5ba;
-    transition: all .4s ease-in-out; }
+    transition: all .4s ease-in-out;
+    margin-inline: 2em;
+    color: #0e273c; }
     .menu__item:hover {
       border-color: gray; }
   .menu__link {
     font-size: 1.5em;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    font-family: #c9c5ba;
+    color: #c9c5ba; }
 
 a:hover {
-  color: #1e000e; }
+  color: #1e000e;
+  border-bottom: 0.5rem; }
 
-#Travelandlearn {
-  background-color: #0e273c;
+footer {
   bottom: 0;
-  position: fixed;
+  background-color: #0e273c;
+  color: white;
   width: 100%;
-  color: #1e000e; }
+  height: 100px;
+  font-family: #c9c5ba;
+  font-size: 1.5em; }
 
 footer ul {
   text-decoration: none;
-  color: #1e000e; }
+  color: white; }

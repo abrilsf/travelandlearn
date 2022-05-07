@@ -1,6 +1,3 @@
-.bcontact{
-    background: $secondary;
-}
 
 
 form {
@@ -11,7 +8,13 @@ button{
     padding:0.5em;
     margin:0.5em;
 }
-.contacto__titulo{
+.contact_text{
+    font-size: 2em;
+}
+.contacto__title{
 font-size: 4em;
+}
 
-} 
+.contactpicture{
+    margin:auto;
+}

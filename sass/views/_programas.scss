@@ -1,24 +1,11 @@
 /*página nuestros programas */
-body .bprogramas{
-    display: grid;
-    grid-template-areas: 
-    "header2"
-    "table"
-    "footer2";
-    grid-template-rows: 5vh 5fr 5vh;
-    background-color: $secondary;
-}
-
-header .hprogramas{
-    grid-area: "header2";
-}
-table{
-    grid-area: "table" ;
-    justify-self: center ;
-    margin: 3em;
+.program__box{
+    background-color: beige;
+    border: radius 9%;
     font-size: 2em;
 }
-.programas_section{
-font-size: 4em;
 
+.nptext{
+    font-style: bold;
 }
+

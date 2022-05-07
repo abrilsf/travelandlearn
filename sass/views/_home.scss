@@ -1,19 +1,31 @@
 /*index */
 
 .index{
-    background-image: url(https://images8.alphacoders.com/691/thumb-1920-691609.jpg) ;  
+    
+    background-image: url(https://wallpaperaccess.com/full/3589351.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
+    min-width: 100%;
+   
+    
     
     &__article{
+        
         font-size: 7em ;
         text-align: center;
         margin-top: 1.5em;
-        font-family: var($font-primary);
-        color: $principal;
+        margin-right: auto;
+        font-family: $font-primary;
+        font-style: bold;
+        color: white;
         }
 
+}
 
+.subarticle{
+    font-size: 2em;
+    color:white;
+    font-family: $font-primary;
 }
 

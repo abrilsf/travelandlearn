@@ -12,70 +12,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 </head>
   
-<body class="bcontact">
-    <header class="hcontact">
-      <nav class="barra flew-row container ">
-        <picture class="logo">
-          <img src="../multimedia/logo3.jpg" alt="logo de empresa de turismo travel and learn">
-        </picture>
-
-        <ul class="flex-row menu justify-content-end"> 
-          <li class="menu__item" >
-            <a href="../index.html" class="menu__link">Home</a></li>
-          <li class="menu__item">
-            <a href="./nosotros.html" class="menu__link">Nosotros</a></li>
-          <li class="menu__item">
-            <a href="./contacto.html" class="menu__link">Contacto</a></li>
-          <li class="menu__item">
-            <a href="./nuestrosprogramas.html" class="menu__link">Programas</a</li>
-          <li class="menu__item">
-            <a href="./academias.html" class="menu__link">Sedes</a></li>
-        </ul> 
+<body>
+    <header>
+      <nav class="barra navbar navbar-expand-lg navbar-light container ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+          <img src="../multimedia/travel&learnu.png" alt="logo de empresa de turismo travel and learn" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="barra collapse navbar-collapse justify-content-right align-items-center" id="navbarNav">
+            <ul class="menu navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active menu__link menu__item" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__item" href="../views/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__item" href="../views/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-itemm">
+                <a class="nav-link menu__link menu__item" href="../views/nuestrosprogramas.html">Programas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__item " href="../views/academias.html">Sedes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
             
-    
-     <div class="subgrid-1">
-      <section class="text-center contacto__titulo">Contacto</section>
+    <div class="position">
+     <div>
+      <section class="text-center pagesTitle">Contacto</section>
      </div>
      
-     <div class="container row contacto__div">
-         <form action="" method="post" class= "col text-center">
-          <label for="fname">Nombre</label> <br>
-          <input type="text" name="fname" id="fname">  <br>
-          <label for="lname">Apellido</label> <br> 
-          <input type="text" name="lname" id="lname"> <br> 
-          <label for="Phone">Número de telefono</label> <br>
-          <input type="number" name="Phone" id="Phone"> <br>
-          <label for="email">E-mail</label> <br>
-          <input type="email" name="E-mail" id="E-mail"> <br>
-          <label for="age">Edad</label> <br>
-          <input type="number" name="age" id="age"><br>
-          <label for="gender">Sexo</label> <br>
-          <select name="gender" id="gender">
-              <option value="Masculino">Masculino</option>
-              <option value="Femenino">Femenino</option>
-          </select> <br>
-          
-          <button type="submit" >Send data</button> 
-          <button type="reset" >Reset data</button>
-          </form>
-          
-        
-            <picture class="contacto__picture col">
-             <img src="../multimedia/contacto.jpg" alt="chica con una computadora" class="cOntact">
-            </picture>
+     <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-center contact_text">Para más información envianos tus datos</p>
+          <form action="" method="post" class= "text-center subgrid__1 column">
+            <label for="fname"></label> <br>
+            <input type="text" name="fname" id="fname" placeholder="Nombre">  <br>
+            <label for="lname"></label> <br> 
+            <input type="text" name="lname" id="lname" placeholder="Apellido"> <br> 
+            <label for="Phone"></label> <br>
+            <input type="number" name="Phone" id="Phone" placeholder="Nümero de teléfono"> <br>
+            <label for="email"></label> <br>
+            <input type="email" name="E-mail" id="E-mail" placeholder="Correo electrónico"> <br>
+            <label for="age"></label> <br>
+            <input type="number" name="age" id="age" placeholder="Edad"><br>
+            
+            <button type="submit" class="m-4 p-2">Enviar</button> 
+            <button type="reset" class="m-4 p-2" >Borrar</button>
+            </form>
+        </div>
+        <div class="col contactpicture">
+          <picture>
+            <img src="../multimedia/contacto.jpg" alt="chica con una computadora">
+           </picture>
+       
+        </div>
         
       </div>
-          
-        <footer id="Travelandlearn">
-        <h3>Travel&Learn</h3>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        
-        </footer>
+    </div>
+    </div>
+    <footer id="Travelandlearn" class="footer align-items-end" >
+      <div class="container">
+        <section class="justify-content-center align-items-center text-center">
+          <p>Seguinos en nuestras redes sociales</p>
+        </section>
+        <section class="text-center">
+          <i class="bi bi-instagram"></i>
+          <img src="../multimedia/instagram.svg" alt="Bootstrap" width="32" height="32">
+          <img src="../multimedia/facebook.svg" alt="Bootstrap" width="32" height="32">
+          <img src="../multimedia/twitter.svg" alt="Bootstrap" width="32" height="32">
+        </section>
+      </div>
+
+
+
+      
+      
+    </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
     </body>
 </html>

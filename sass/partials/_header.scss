@@ -1,14 +1,18 @@
 /*Header y barra de navegación*/
 
 header {
-    background-color: $secondary;
-    display: block;
+    display: sticky;
+    color:$secondary;
+
    }
  .barra {
     display: flex;
-    justify-content: space-between;
-    min-height: 10vh;
+    justify-content: space-evenly;
+    justify-items: center;
+    min-height: 80px;
     padding: 0 2rem;
+    color: white;
+    position: sticky;
  }
 
 
@@ -18,12 +22,13 @@ header {
  .menu {
     display: flex;
     flex-basis: 40%;
-    justify-content: right;
-    
-
+     
     &__item{
-        border: 1px solid $secondary; 
+        
         transition: all .4s ease-in-out;
+        margin-inline: 2em;
+        color: $terciary;
+       
 
         &:hover {
         border-color: gray;
@@ -33,11 +38,15 @@ header {
     &__link {
         font-size: 1.5em;
         padding: 0.5rem;   
-        
+        font-family: $secondary;
+        color: $secondary;
     }
 }
+
+
 a:hover{
-    color: $principal
+    color: $principal;
+    border-bottom: 0.5rem;
 }
 
 

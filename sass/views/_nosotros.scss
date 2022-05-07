@@ -1,11 +1,13 @@
 /*página sobre nosotros */
-.nosBody{
+.nos{
     background: $secondary;
+    min-height: calc(100vh - 10vh - 100px);
+  
+    &__title{
+      font-size: 5em;
+  }  
 } 
-.nosTitle{
-    font-size:5em;
-    
-}
+
 .nosInfo{
     font-size: 2em;
 }
